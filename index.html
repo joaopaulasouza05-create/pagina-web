@@ -1,460 +1,148 @@
+index.html
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AgroFuturo - Agropecuária</title>
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-font-family:Arial, Helvetica, sans-serif;
-}
-
-body{
-background:#f5f7f3;
-color:#333;
-}
-
-header{
-background:#2E7D32;
-padding:20px;
-position:fixed;
-width:100%;
-top:0;
-z-index:1000;
-box-shadow:0 3px 10px rgba(0,0,0,.2);
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-max-width:1200px;
-margin:auto;
-}
-
-.logo{
-color:white;
-font-size:30px;
-font-weight:bold;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-}
-
-nav ul li{
-margin-left:25px;
-}
-
-nav ul li a{
-color:white;
-text-decoration:none;
-font-weight:bold;
-transition:.3s;
-}
-
-nav ul li a:hover{
-color:#FFD54F;
-}
-
-.banner{
-height:100vh;
-background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1600&q=80');
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-color:white;
-padding:20px;
-}
-
-.banner h1{
-font-size:60px;
-margin-bottom:20px;
-}
-
-.banner p{
-font-size:22px;
-margin-bottom:30px;
-}
-
-.botao{
-background:#43A047;
-padding:15px 35px;
-color:white;
-text-decoration:none;
-font-size:18px;
-border-radius:6px;
-transition:.3s;
-}
-
-.botao:hover{
-background:#1B5E20;
-}
-
-section{
-padding:90px 10%;
-}
-
-h2{
-text-align:center;
-font-size:38px;
-margin-bottom:40px;
-color:#2E7D32;
-}
-
-.sobre{
-max-width:900px;
-margin:auto;
-text-align:center;
-font-size:20px;
-line-height:1.8;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-padding:30px;
-border-radius:10px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,.15);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-}
-
-.card h3{
-margin:15px 0;
-color:#2E7D32;
-}
-
-.galeria{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
-}
-
-.galeria img{
-width:100%;
-height:250px;
-object-fit:cover;
-border-radius:10px;
-transition:.3s;
-}
-
-.galeria img:hover{
-transform:scale(1.05);
-}
-
-table{
-width:100%;
-border-collapse:collapse;
-background:white;
-box-shadow:0 5px 10px rgba(0,0,0,.1);
-}
-
-th{
-background:#2E7D32;
-color:white;
-padding:15px;
-}
-
-td{
-padding:15px;
-text-align:center;
-border-bottom:1px solid #ddd;
-}
-
-form{
-max-width:700px;
-margin:auto;
-display:flex;
-flex-direction:column;
-}
-
-input,textarea{
-padding:15px;
-margin:10px 0;
-border:1px solid #ccc;
-border-radius:6px;
-font-size:17px;
-}
-
-button{
-padding:15px;
-background:#2E7D32;
-color:white;
-border:none;
-cursor:pointer;
-font-size:18px;
-border-radius:6px;
-transition:.3s;
-}
-
-button:hover{
-background:#1B5E20;
-}
-
-footer{
-background:#2E7D32;
-color:white;
-padding:30px;
-text-align:center;
-}
-
-@media(max-width:768px){
-
-.banner h1{
-font-size:38px;
-}
-
-.banner p{
-font-size:18px;
-}
-
-nav{
-flex-direction:column;
-}
-
-nav ul{
-margin-top:15px;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-nav ul li{
-margin:10px;
-}
-
-}
-</style>
-
+<title>Blog</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
 <header>
-
-<nav>
-
-<div class="logo">🌱 AgroFuturo</div>
-
-<ul>
-
-<li><a href="#inicio">Início</a></li>
-<li><a href="#sobre">Sobre</a></li>
-<li><a href="#servicos">Serviços</a></li>
-<li><a href="#produtos">Produtos</a></li>
-<li><a href="#galeria">Galeria</a></li>
-<li><a href="#contato">Contato</a></li>
-
-</ul>
-
-</nav>
-
+<h1>Meu blog tech</h1>
+<p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
 </header>
-
-<section class="banner" id="inicio">
-
+<main>
+<article>
+<img src="imagens/s1000.jpeg"
+alt="Logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
 <div>
+<h2>Meu primeiro post</h2>
+<p class="artigo-autor">Por: Marcelo Paludetto</p>
+<p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+tecnologia.</p>
 
-<h1>AgroFuturo</h1>
+<button>❤️ <span>0</span></button>
+<button>👍 <span>0</span></button>
+</div>
+</article>
 
-<p>
-Tecnologia, sustentabilidade e produtividade para o agronegócio brasileiro.
+<article>
+<img src="imagens/sjk.jpeg"
+alt="Ilustração do planeta Terra cercado por elementos digitais, representando a conectividade global e a tecnologia.">
+<div>
+<h2>A quantidade de dados no mundo é surreal</h2>
+<p class="artigo-autor">Por: Marcelo Paludetto</p>
+<p>Estima-se que 90% de todos os dados existentes no mundo hoje foram gerados apenas nos últimos dois
+anos. Vivemos em uma verdadeira explosão de informação que não para de acelerar.</p>
+
+<p class="artigo-fonte">Fonte: Jornal
+Opção
+</p>
+<button>❤️ <span>0</span></button>
+<button>👍 <span>0</span></button>
+</div>
+</article>
+
+<article>
+<img src="imagens/tracer.jpeg"
+alt="Ilustração de uma caixa de madeira com tampa e encaixe, representando armazenamento ou organização.">
+<div>
+<h2>O primeiro mouse não era de plástico</h2>
+<p class="artigo-autor">Por: Giulliana Cestari</p>
+<p>Antes do design ergonômico e das luzes RGB, o primeiro mouse do mundo foi construído em madeira!
+Criado por Douglas Engelbart em 1964, ele tinha o formato de uma caixa quadrada e apenas um botão.
 </p>
 
-<a href="#contato" class="botao">Solicite um orçamento</a>
+<p class="artigo-fonte">Fonte: TechTudo.</p>
 
+<button>❤️ <span>0</span></button>
+<button>👍 <span>0</span></button>
 </div>
+</article>
 
-</section>
+<article>
+<img src="imagens/xj67.jpeg"
+alt="Ilustração de dentes com coloração azul apresentando cáries, rachaduras e manchas próximas à gengiva.">
+<div>
+<h2>Por que o Bluetooth se chama assim?</h2>
+<p class="artigo-autor">Por: Giulliana Cestari</p>
+<p>O nome é uma homenagem ao rei viking Harald
+Blatand Gormsson, que unificou tribos da Escandinávia. Seu apelido era Harald "Bluetooth" porque
+seus
+dentes eram tão podres que tinham uma coloração azul escura.</p>
 
-<section id="sobre">
+<p class="artigo-fonte">Fonte: TechTudo
+</p>
 
-<h2>Sobre a Empresa</h2>
-
-<div class="sobre">
-
-Somos uma empresa especializada em agricultura e pecuária, oferecendo soluções
-modernas para produtores rurais. Trabalhamos com responsabilidade ambiental,
-tecnologia de ponta e foco na qualidade dos produtos.
-
+<button>❤️ <span>0</span></button>
+<button>👍 <span>0</span></button>
 </div>
+</article>
 
-</section>
+<article>
+<img src="imagens/creusa.jpeg"
+alt="Ilustração de uma mariposa com asas abertas em tons de marrom, com padrões circulares nas asas.">
+<div>
+<h2>O "Bug" que era um bicho de verdade</h2>
+<p class="artigo-autor">Por: Giulliana Cestari</p>
+<p>O termo "bug" (inseto) para erros de software ficou famoso em 1947, quando engenheiros encontraram
+uma mariposa real presa dentro do computador Harvard Mark II, causando uma falha no sistema.</p>
 
-<section id="servicos">
-
-<h2>Nossos Serviços</h2>
-
-<div class="cards">
-
-<div class="card">
-<h1>🌾</h1>
-<h3>Agricultura</h3>
-<p>Produção de milho, soja, trigo, café e diversas culturas agrícolas.</p>
+<p class="artigo-fonte">Fonte: Educa
+Mais Brasil</p>
+<button>❤️ <span>0</span></button>
+<button>👍 <span>0</span></button>
 </div>
+</article>
 
-<div class="card">
-<h1>🐄</h1>
-<h3>Pecuária</h3>
-<p>Criação de bovinos de corte e leite com manejo sustentável.</p>
+<article>
+<img src="imagens/S1000RR.jpeg"
+alt="Ilustração de uma câmera em tripé ao lado de uma cafeteira preparando café.">
+<div>
+<h2>A primeira webcam servia para vigiar café</h2>
+<p class="artigo-autor">Por: Giulliana Cestari</p>
+<p>Em 1991, pesquisadores da Universidade de Cambridge criaram a primeira webcam para não perderem tempo
+indo até a cozinha e encontrando a cafeteira vazia. Eles monitoravam o nível do café em tempo real
+nos seus monitores.</p>
+
+<p class="artigo-fonte">Fonte: BBC</p>
+
+<button>❤️ <span>0</span></button>
+<button>👍 <span>0</span></button>
 </div>
+</article>
 
-<div class="card">
-<h1>🚜</h1>
-<h3>Consultoria</h3>
-<p>Planejamento agrícola, irrigação e assistência técnica especializada.</p>
+<article>
+<img src="imagens/sahara.jpeg"
+alt="Ilustração de uma máquina sobre uma fita com números e símbolos, representando o processamento de dados.">
+<div>
+<h2>O primeiro computador não foi a máquina de Turing?</h2>
+<p class="artigo-autor">Por: Felipe Gibertoni</p>
+<p>Apesar de Alan Turing ser conhecido como pai da computação, ele não criou o primeiro computador.
+Entre os primeiros computadores, um deles foi chamado Colossus projetado por Tommy Flowers durante a
+Segunda Guerra Mundial e também, praticamente na mesma época, o ENIAC foi projetado por J. Presper
+Eckert e John Mauchly.
+
+<br><br>Embora o Colossus tenha funcionado antes como um "herói de guerra" especializado, o ENIAC é
+frequentemente chamado de "pai" por ser o primeiro programável de uso geral.
+
+<br><br>E aí, qual você consideraria como o primeiro computador?
+</p>
+
+<p class="artigo-fonte">Fonte: The National
+Museum
+of Computing</p>
+
+<button>❤️ <span>0</span></button>
+<button>👍 <span>0</span></button>
 </div>
+</article>
+</main>
 
-<div class="card">
-<h1>🌱</h1>
-<h3>Sustentabilidade</h3>
-<p>Projetos ambientais e uso consciente dos recursos naturais.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="produtos">
-
-<h2>Produtos</h2>
-
-<table>
-
-<tr>
-
-<th>Produto</th>
-<th>Categoria</th>
-<th>Disponibilidade</th>
-
-</tr>
-
-<tr>
-
-<td>Soja</td>
-<td>Grãos</td>
-<td>Disponível</td>
-
-</tr>
-
-<tr>
-
-<td>Milho</td>
-<td>Grãos</td>
-<td>Disponível</td>
-
-</tr>
-
-<tr>
-
-<td>Leite</td>
-<td>Laticínios</td>
-<td>Diário</td>
-
-</tr>
-
-<tr>
-
-<td>Gado de Corte</td>
-<td>Pecuária</td>
-<td>Sob Consulta</td>
-
-</tr>
-
-</table>
-
-</section>
-
-<section id="galeria">
-
-<h2>Galeria</h2>
-
-<div class="galeria">
-
-<img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=900&q=80">
-
-<img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=900&q=80">
-
-<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80">
-
-<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=900&q=80">
-
-</div>
-
-</section>
-
-<section id="contato">
-
-<h2>Contato</h2>
-
-<form id="formulario">
-
-<input type="text" placeholder="Nome Completo" required>
-
-<input type="email" placeholder="E-mail" required>
-
-<input type="tel" placeholder="Telefone">
-
-<textarea rows="6" placeholder="Digite sua mensagem"></textarea>
-
-<button type="submit">Enviar Mensagem</button>
-
-</form>
-
-</section>
-
-<footer>
-
-<h3>🌱 AgroFuturo</h3>
-
-<p>Produzindo hoje o alimento do amanhã.</p>
-
-<br>
-
-<p>📍 Fazenda Modelo - Brasil</p>
-
-<p>📞 (00) 99999-9999</p>
-
-<p>✉ contato@agrofuturo.com.br</p>
-
-<br>
-
-<p>© 2026 AgroFuturo - Todos os direitos reservados.</p>
-
-</footer>
-
-<script>
-
-document.getElementById("formulario").addEventListener("submit",function(e){
-
-e.preventDefault();
-
-alert("Mensagem enviada com sucesso! Entraremos em contato em breve.");
-
-this.reset();
-
-});
-
-</script>
-
+<script src="script.js"></script>
 </body>
+
 </html>
